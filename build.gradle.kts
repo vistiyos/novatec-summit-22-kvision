@@ -101,6 +101,7 @@ kotlin {
                 implementation("io.kvision:kvision-bootstrap:$kvisionVersion")
                 implementation("io.kvision:kvision-bootstrap-css:$kvisionVersion")
                 implementation("io.kvision:kvision-routing-navigo-ng:$kvisionVersion")
+                implementation("io.kvision:kvision-datacontainer:$kvisionVersion")
             }
             kotlin.srcDir("build/generated-src/frontend")
         }

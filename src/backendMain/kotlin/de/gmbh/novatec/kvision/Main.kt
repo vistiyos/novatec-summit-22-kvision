@@ -8,6 +8,7 @@ import io.kvision.remote.getAllServiceManagers
 import io.kvision.remote.kvisionInit
 import org.koin.core.module.dsl.factoryOf
 import org.koin.dsl.module
+import de.gmbh.novatec.kvision.service.GameService
 
 fun Application.main() {
     install(Compression)
@@ -15,7 +16,7 @@ fun Application.main() {
         getAllServiceManagers().forEach { applyRoutes(it) }
     }
     val module = module {
-        factoryOf(::PingService)
+        factoryOf(::GameService)
     }
     kvisionInit(module)
 }
